@@ -14,6 +14,8 @@ class RouterV1{
 
     init(){
         this.router.get("/", ControllerV1.getUniversities);
+        this.router.post("/set-fav", ControllerV1.setFav);
+        this.router.get("/get-fav", ControllerV1.getFav);
     }
 
 

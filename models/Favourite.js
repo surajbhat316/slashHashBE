@@ -1,7 +1,7 @@
 import { Sequelize, DataTypes } from 'sequelize';
-const sequelize = new Sequelize({dialect: "mysql"});
+import sequelize from '../config/dbConnection.js';
 
-const Favourite = sequelize.define(
+export const Favourite = sequelize.define(
   'Favourite',
   {
     // Model attributes are defined here
